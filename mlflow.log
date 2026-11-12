@@ -1,0 +1,120 @@
+Backend store URI not provided. Using sqlite:///mlflow.db
+Registry store URI not provided. Using backend store URI.
+[MLflow] Security middleware enabled with default settings (localhost-only). To allow connections from other hosts, use --host 0.0.0.0 and configure --allowed-hosts and --cors-allowed-origins.
+2026/11/12 18:19:18 INFO mlflow.server.jobs.executor_registry: Available backends after discovery: docker, local
+2026/11/12 18:19:18 INFO mlflow.server.jobs.executor_registry: Job executor backend 'local' passed requirements check
+2026/11/12 18:19:18 INFO:     Uvicorn running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2026/11/12 18:19:18 INFO:     Started parent process [12480]
+/Users/user/Desktop/mlflow-practice/.venv/lib/python3.14/site-packages/mlflow/server/fastapi_app.py:24: StarletteDeprecationWarning: starlette.middleware.wsgi is deprecated and will be removed in a future release. Please refer to https://github.com/abersheeran/a2wsgi as a replacement.
+  from starlette.middleware.wsgi import WSGIResponder, build_environ
+/Users/user/Desktop/mlflow-practice/.venv/lib/python3.14/site-packages/mlflow/server/fastapi_app.py:24: StarletteDeprecationWarning: starlette.middleware.wsgi is deprecated and will be removed in a future release. Please refer to https://github.com/abersheeran/a2wsgi as a replacement.
+  from starlette.middleware.wsgi import WSGIResponder, build_environ
+/Users/user/Desktop/mlflow-practice/.venv/lib/python3.14/site-packages/mlflow/server/fastapi_app.py:24: StarletteDeprecationWarning: starlette.middleware.wsgi is deprecated and will be removed in a future release. Please refer to https://github.com/abersheeran/a2wsgi as a replacement.
+  from starlette.middleware.wsgi import WSGIResponder, build_environ
+/Users/user/Desktop/mlflow-practice/.venv/lib/python3.14/site-packages/mlflow/server/fastapi_app.py:24: StarletteDeprecationWarning: starlette.middleware.wsgi is deprecated and will be removed in a future release. Please refer to https://github.com/abersheeran/a2wsgi as a replacement.
+  from starlette.middleware.wsgi import WSGIResponder, build_environ
+2026/11/12 18:19:20 INFO:     Started server process [12485]
+2026/11/12 18:19:20 INFO:     Waiting for application startup.
+2026/11/12 18:19:20 INFO:     Started server process [12483]
+2026/11/12 18:19:20 INFO:     Waiting for application startup.
+2026/11/12 18:19:20 INFO:     Started server process [12484]
+2026/11/12 18:19:20 INFO:     Waiting for application startup.
+2026/11/12 18:19:20 INFO:     Application startup complete.
+2026/11/12 18:19:20 INFO:     Application startup complete.
+2026/11/12 18:19:20 INFO:     Application startup complete.
+2026/11/12 18:19:20 INFO:     Started server process [12486]
+2026/11/12 18:19:20 INFO:     Waiting for application startup.
+2026/11/12 18:19:20 INFO:     Application startup complete.
+2026/11/12 18:19:22 INFO mlflow.server.jobs.utils: Registered online_scoring_scheduler periodic task (runs every 1 minute)
+2026/11/12 18:19:22 INFO mlflow.server.jobs.utils: Registered trace_archival_scheduler periodic task (polls every 1 minute and no-ops when trace archival is disabled or unconfigured)
+2026/11/12 18:19:22 INFO mlflow.server.jobs.utils: Registered issue_detection_scheduler periodic task (polls every 15 minutes and no-ops when no experiment has a detection schedule)
+2026/11/12 18:19:22 INFO mlflow.server.jobs.utils: SQL trace rollup scheduler was not registered because rollups are disabled
+2026/11/12 18:19:43 WARNING:  Invalid HTTP request received.
+2026/11/12 18:19:45 WARNING:  Invalid HTTP request received.
+2026/11/12 18:19:47 WARNING:  Invalid HTTP request received.
+2026/11/12 18:19:49 WARNING:  Invalid HTTP request received.
+2026/11/12 18:20:18 INFO:     127.0.0.1:55111 - "GET / HTTP/1.1" 200 OK
+2026/11/12 18:20:18 INFO:     127.0.0.1:55111 - "GET /static-files/static/js/main.00d66947.js HTTP/1.1" 200 OK
+2026/11/12 18:20:18 INFO:     127.0.0.1:55112 - "GET /static-files/static/css/main.b0f58ef9.css HTTP/1.1" 200 OK
+2026/11/12 18:20:18 INFO:     127.0.0.1:55111 - "GET /static-files/favicon.ico HTTP/1.1" 200 OK
+2026/11/12 18:20:18 INFO:     127.0.0.1:55112 - "GET /static-files/TelemetryLogger.telemetry-worker.d0f8ea2c83c08b63528f.worker.js HTTP/1.1" 200 OK
+2026/11/12 18:20:18 INFO:     127.0.0.1:55111 - "GET /ajax-api/3.0/mlflow/server-info HTTP/1.1" 200 OK
+2026/11/12 18:20:18 INFO:     127.0.0.1:55111 - "GET /static-files/static/js/4205.9e750e7b.chunk.js HTTP/1.1" 200 OK
+2026/11/12 18:20:18 INFO:     127.0.0.1:55111 - "GET /ajax-api/2.0/mlflow/users/current HTTP/1.1" 404 Not Found
+2026/11/12 18:20:18 INFO:     127.0.0.1:55115 - "GET /ajax-api/3.0/mlflow/assistant/config HTTP/1.1" 200 OK
+2026/11/12 18:20:18 INFO:     127.0.0.1:55111 - "GET /ajax-api/3.0/mlflow/assistant/config HTTP/1.1" 200 OK
+2026/11/12 18:20:18 INFO:     127.0.0.1:55111 - "GET /static-files/static/js/3877.deddfc3c.chunk.js HTTP/1.1" 200 OK
+2026/11/12 18:20:18 INFO:     127.0.0.1:55111 - "GET /static-files/static/js/7340.27a16a3f.chunk.js HTTP/1.1" 200 OK
+2026/11/12 18:20:18 INFO:     127.0.0.1:55115 - "GET /static-files/static/css/8811.26533251.chunk.css HTTP/1.1" 200 OK
+2026/11/12 18:20:18 INFO:     127.0.0.1:55115 - "GET /static-files/static/media/demo-tracing-screenshot-dark.5cb0c24b165d2ed2fef0.png HTTP/1.1" 200 OK
+2026/11/12 18:20:18 INFO:     127.0.0.1:55111 - "GET /ajax-api/2.0/mlflow/experiments/search?max_results=5&order_by=last_update_time+DESC HTTP/1.1" 200 OK
+2026/11/12 18:20:18 INFO:     127.0.0.1:55116 - "GET /ajax-api/3.0/mlflow/assistant/providers HTTP/1.1" 200 OK
+2026/11/12 18:20:18 INFO:     127.0.0.1:55111 - "GET /ajax-api/3.0/mlflow/assistant/providers HTTP/1.1" 200 OK
+2026/11/12 18:20:18 INFO:     127.0.0.1:55117 - "GET /static-files/static/js/8811.d5684603.chunk.js HTTP/1.1" 200 OK
+2026/11/12 18:20:19 INFO:     127.0.0.1:55112 - "GET /ajax-api/3.0/mlflow/ui-telemetry HTTP/1.1" 200 OK
+2026/11/12 18:20:20 INFO:     127.0.0.1:55111 - "GET /ajax-api/3.0/mlflow/ui-telemetry HTTP/1.1" 200 OK
+2026/11/12 18:20:21 INFO:     127.0.0.1:55111 - "GET /ajax-api/3.0/mlflow/ui-telemetry HTTP/1.1" 200 OK
+2026/11/12 18:20:26 INFO:     127.0.0.1:55111 - "GET /ajax-api/3.0/mlflow/assistant/config HTTP/1.1" 200 OK
+2026/11/12 18:20:31 INFO:     127.0.0.1:55111 - "GET /static-files/static/css/9735.26533251.chunk.css HTTP/1.1" 200 OK
+2026/11/12 18:20:31 INFO:     127.0.0.1:55181 - "GET /static-files/static/js/9735.0159684f.chunk.js HTTP/1.1" 200 OK
+2026/11/12 18:20:31 INFO:     127.0.0.1:55111 - "GET /ajax-api/2.0/mlflow/experiments/search?max_results=25&order_by=last_update_time+DESC&filter=tags.%60mlflow.experiment.isGateway%60+IS+NULL HTTP/1.1" 200 OK
+2026/11/12 18:20:32 INFO:     127.0.0.1:55111 - "GET /static-files/static/js/9861.2d6b3bae.chunk.js HTTP/1.1" 200 OK
+2026/11/12 18:20:32 INFO:     127.0.0.1:55181 - "GET /static-files/static/js/6507.352ad2e0.chunk.js HTTP/1.1" 200 OK
+2026/11/12 18:20:32 INFO:     127.0.0.1:55185 - "GET /static-files/static/js/3586.499edb1b.chunk.js HTTP/1.1" 200 OK
+2026/11/12 18:20:32 INFO:     127.0.0.1:55187 - "GET /static-files/static/css/3015.24118451.chunk.css HTTP/1.1" 200 OK
+2026/11/12 18:20:32 INFO:     127.0.0.1:55181 - "GET /static-files/static/js/3015.56f90096.chunk.js HTTP/1.1" 200 OK
+2026/11/12 18:20:32 INFO:     127.0.0.1:55184 - "GET /static-files/static/js/353.df7e2039.chunk.js HTTP/1.1" 200 OK
+2026/11/12 18:20:32 INFO:     127.0.0.1:55186 - "GET /static-files/static/js/1616.3425b984.chunk.js HTTP/1.1" 200 OK
+2026/11/12 18:20:32 INFO:     127.0.0.1:55185 - "POST /graphql HTTP/1.1" 200 OK
+2026/11/12 18:20:32 INFO:     127.0.0.1:55111 - "GET /static-files/static/js/3198.bb9ac57b.chunk.js HTTP/1.1" 200 OK
+2026/11/12 18:20:32 INFO:     127.0.0.1:55181 - "GET /static-files/static/js/4863.c17ad67f.chunk.js HTTP/1.1" 200 OK
+2026/11/12 18:20:32 INFO:     127.0.0.1:55184 - "GET /static-files/static/js/8503.9d34794c.chunk.js HTTP/1.1" 200 OK
+2026/11/12 18:20:32 INFO:     127.0.0.1:55185 - "GET /static-files/static/js/8209.4825d7ad.chunk.js HTTP/1.1" 200 OK
+2026/11/12 18:20:32 INFO:     127.0.0.1:55186 - "GET /static-files/static/js/9848.4169dd85.chunk.js HTTP/1.1" 200 OK
+2026/11/12 18:20:32 INFO:     127.0.0.1:55187 - "GET /static-files/static/js/855.c7e4c8a6.chunk.js HTTP/1.1" 200 OK
+2026/11/12 18:20:32 INFO:     127.0.0.1:55181 - "GET /static-files/static/js/2071.ce0e158c.chunk.js HTTP/1.1" 200 OK
+2026/11/12 18:20:32 INFO:     127.0.0.1:55111 - "GET /static-files/static/js/9360.f696c64b.chunk.js HTTP/1.1" 200 OK
+2026/11/12 18:20:32 INFO:     127.0.0.1:55186 - "GET /static-files/static/js/9837.b3b3b287.chunk.js HTTP/1.1" 200 OK
+2026/11/12 18:20:32 INFO:     127.0.0.1:55187 - "GET /static-files/static/js/7182.3ef844cf.chunk.js HTTP/1.1" 200 OK
+2026/11/12 18:20:32 INFO:     127.0.0.1:55184 - "GET /static-files/static/js/9867.768a39b1.chunk.js HTTP/1.1" 200 OK
+2026/11/12 18:20:32 INFO:     127.0.0.1:55185 - "GET /static-files/static/js/2369.415f0230.chunk.js HTTP/1.1" 200 OK
+2026/11/12 18:20:32 INFO:     127.0.0.1:55181 - "GET /static-files/static/js/3121.3be60de2.chunk.js HTTP/1.1" 200 OK
+2026/11/12 18:20:32 INFO:     127.0.0.1:55111 - "GET /static-files/static/js/8484.db1876bb.chunk.js HTTP/1.1" 200 OK
+2026/11/12 18:20:32 INFO:     127.0.0.1:55186 - "GET /static-files/static/js/4751.94bc6db7.chunk.js HTTP/1.1" 200 OK
+2026/11/12 18:20:32 INFO:     127.0.0.1:55181 - "GET /static-files/static/js/8739.c191b2a3.chunk.js HTTP/1.1" 200 OK
+2026/11/12 18:20:32 INFO:     127.0.0.1:55185 - "GET /static-files/static/js/3793.0117dc93.chunk.js HTTP/1.1" 200 OK
+2026/11/12 18:20:32 INFO:     127.0.0.1:55111 - "GET /static-files/static/js/3569.b70453bd.chunk.js HTTP/1.1" 200 OK
+2026/11/12 18:20:32 INFO:     127.0.0.1:55186 - "GET /static-files/static/js/4298.c8dc6f68.chunk.js HTTP/1.1" 200 OK
+2026/11/12 18:20:32 INFO:     127.0.0.1:55181 - "GET /static-files/static/js/5343.bbb1f624.chunk.js HTTP/1.1" 200 OK
+2026/11/12 18:20:32 INFO:     127.0.0.1:55184 - "GET /static-files/static/js/3878.4c566b05.chunk.js HTTP/1.1" 200 OK
+2026/11/12 18:20:32 INFO:     127.0.0.1:55185 - "GET /static-files/static/css/5343.b4cc2aa3.chunk.css HTTP/1.1" 200 OK
+2026/11/12 18:20:33 INFO:     127.0.0.1:55111 - "POST /ajax-api/2.0/mlflow/experiments/search-datasets HTTP/1.1" 200 OK
+2026/11/12 18:20:33 INFO:     127.0.0.1:55111 - "GET /static-files/static/css/2685.f073c5c3.chunk.css HTTP/1.1" 200 OK
+2026/11/12 18:20:33 INFO:     127.0.0.1:55184 - "GET /static-files/static/js/1372.38a0e73a.chunk.js HTTP/1.1" 200 OK
+2026/11/12 18:20:33 INFO:     127.0.0.1:55187 - "GET /static-files/static/js/2685.2f8f1b38.chunk.js HTTP/1.1" 200 OK
+2026/11/12 18:20:33 INFO:     127.0.0.1:55111 - "GET /ajax-api/2.0/mlflow/gateway-proxy?gateway_path=api%2F2.0%2Fendpoints%2F HTTP/1.1" 200 OK
+2026/11/12 18:20:33 INFO:     127.0.0.1:55184 - "POST /ajax-api/2.0/mlflow/logged-models/search HTTP/1.1" 200 OK
+2026/11/12 18:20:33 INFO:     127.0.0.1:55181 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/11/12 18:20:34 INFO:     127.0.0.1:55181 - "GET /static-files/static/js/6784.0deca3c6.chunk.js HTTP/1.1" 200 OK
+2026/11/12 18:20:34 INFO:     127.0.0.1:55184 - "GET /static-files/static/css/6784.a73f718d.chunk.css HTTP/1.1" 200 OK
+2026/11/12 18:20:34 INFO:     127.0.0.1:55111 - "GET /static-files/static/js/3254.78294c18.chunk.js HTTP/1.1" 200 OK
+2026/11/12 18:20:34 INFO:     127.0.0.1:55187 - "GET /static-files/static/js/9003.b2839fc1.chunk.js HTTP/1.1" 200 OK
+2026/11/12 18:20:34 INFO:     127.0.0.1:55111 - "POST /ajax-api/2.0/mlflow/logged-models/search HTTP/1.1" 200 OK
+2026/11/12 18:20:34 INFO:     127.0.0.1:55111 - "GET /static-files/static/media/versions-empty.3e2d8bb8c5b8ddd0a19a34890b36ad41.svg HTTP/1.1" 200 OK
+2026/11/12 18:20:34 INFO:     127.0.0.1:55111 - "GET /static-files/static/js/6411.852e0773.chunk.js HTTP/1.1" 200 OK
+2026/11/12 18:20:34 INFO:     127.0.0.1:55187 - "GET /static-files/static/js/9766.0cc65bea.chunk.js HTTP/1.1" 200 OK
+2026/11/12 18:20:34 INFO:     127.0.0.1:55111 - "GET /static-files/static/js/4818.84771aae.chunk.js HTTP/1.1" 200 OK
+2026/11/12 18:20:34 INFO:     127.0.0.1:55184 - "GET /static-files/static/js/5823.f6ba1201.chunk.js HTTP/1.1" 200 OK
+2026/11/12 18:20:34 INFO:     127.0.0.1:55181 - "GET /static-files/static/js/616.2db9a6c2.chunk.js HTTP/1.1" 200 OK
+2026/11/12 18:20:34 INFO:     127.0.0.1:55111 - "POST /ajax-api/3.0/mlflow/datasets/search HTTP/1.1" 200 OK
+2026/11/12 18:20:34 INFO:     127.0.0.1:55187 - "POST /ajax-api/3.0/mlflow/traces/search HTTP/1.1" 200 OK
+2026/11/12 18:20:34 INFO:     127.0.0.1:55184 - "POST /ajax-api/3.0/mlflow/traces/metrics HTTP/1.1" 200 OK
+2026/11/12 18:20:34 INFO:     127.0.0.1:55181 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/11/12 18:20:34 INFO:     127.0.0.1:55186 - "GET /ajax-api/2.0/mlflow/experiments/get?experiment_id=0 HTTP/1.1" 200 OK
+2026/11/12 18:20:34 INFO:     127.0.0.1:55111 - "POST /ajax-api/3.0/mlflow/traces/search HTTP/1.1" 200 OK
+2026/11/12 18:20:37 INFO:     127.0.0.1:55111 - "GET /ajax-api/2.0/mlflow/experiments/search?max_results=25&order_by=last_update_time+DESC&filter=tags.%60mlflow.experiment.isGateway%60+IS+NULL HTTP/1.1" 200 OK
+2026/11/12 18:20:39 INFO:     127.0.0.1:55111 - "GET /static-files/static/css/927.f3f01f1d.chunk.css HTTP/1.1" 200 OK
+2026/11/12 18:20:39 INFO:     127.0.0.1:55187 - "GET /static-files/static/js/927.f75e32ea.chunk.js HTTP/1.1" 200 OK
+2026/11/12 18:20:39 INFO:     127.0.0.1:55111 - "GET /ajax-api/2.0/mlflow/registered-models/search?filter=&max_results=25&order_by=name+ASC HTTP/1.1" 200 OK
+2026/11/12 18:20:42 INFO:     127.0.0.1:55111 - "GET /ajax-api/3.0/mlflow/ui-telemetry HTTP/1.1" 200 OK
+2026/11/12 18:20:49 INFO:     127.0.0.1:55214 - "GET /ajax-api/2.0/mlflow/experiments/search?max_results=25&order_by=last_update_time+DESC&filter=tags.%60mlflow.experiment.isGateway%60+IS+NULL HTTP/1.1" 200 OK
