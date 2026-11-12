@@ -1,0 +1,15 @@
+  | Name    | Type             | Params | Mode  | FLOPs
+-------------------------------------------------------------
+0 | net     | Sequential       | 4.8 K  | train | 0    
+1 | net.0   | Linear           | 4.2 K  | train | 0    
+2 | net.1   | ReLU             | 0      | train | 0    
+3 | net.2   | Linear           | 650    | train | 0    
+4 | loss_fn | CrossEntropyLoss | 0      | train | 0    
+-------------------------------------------------------------
+4.8 K     Trainable params
+0         Non-trainable params
+4.8 K     Total params
+0.019     Total estimated model params size (MB)
+5         Modules in train mode
+0         Modules in eval mode
+0         Total Flops
