@@ -923,3 +923,61 @@ Registry store URI not provided. Using backend store URI.
 2026/11/12 18:48:12 INFO:     127.0.0.1:56122 - "PATCH /api/2.0/mlflow/logged-models/m-e59fc045c0474bd09c60a29eda0991b7 HTTP/1.1" 200 OK
 2026/11/12 18:48:12 INFO:     127.0.0.1:56122 - "GET /api/2.0/mlflow/runs/get?run_uuid=e60ca46bc8f24ccd8cc4bed15507ac4d&run_id=e60ca46bc8f24ccd8cc4bed15507ac4d HTTP/1.1" 200 OK
 2026/11/12 18:48:12 INFO:     127.0.0.1:56122 - "POST /api/2.0/mlflow/runs/update HTTP/1.1" 200 OK
+2026/11/12 18:48:41 INFO:     127.0.0.1:56153 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/11/12 18:48:55 INFO:     127.0.0.1:56163 - "GET /ajax-api/2.0/mlflow/experiments/search?max_results=25&order_by=last_update_time+DESC&filter=tags.%60mlflow.experiment.isGateway%60+IS+NULL HTTP/1.1" 200 OK
+2026/11/12 18:48:56 INFO:     127.0.0.1:56163 - "POST /graphql HTTP/1.1" 200 OK
+2026/11/12 18:48:56 INFO:     127.0.0.1:56163 - "POST /ajax-api/2.0/mlflow/experiments/search-datasets HTTP/1.1" 200 OK
+2026/11/12 18:48:56 INFO:     127.0.0.1:56165 - "GET /ajax-api/2.0/mlflow/gateway-proxy?gateway_path=api%2F2.0%2Fendpoints%2F HTTP/1.1" 200 OK
+2026/11/12 18:48:56 INFO:     127.0.0.1:56163 - "POST /ajax-api/2.0/mlflow/logged-models/search HTTP/1.1" 200 OK
+2026/11/12 18:48:56 INFO:     127.0.0.1:56164 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/11/12 18:49:00 INFO:     127.0.0.1:56164 - "GET /ajax-api/2.0/mlflow/model-versions/search?filter=run_id%3D%27e60ca46bc8f24ccd8cc4bed15507ac4d%27 HTTP/1.1" 200 OK
+2026/11/12 18:49:00 INFO:     127.0.0.1:56163 - "POST /graphql HTTP/1.1" 200 OK
+2026/11/12 18:49:00 INFO:     127.0.0.1:56163 - "GET /ajax-api/2.0/mlflow/model-versions/search?filter=tags.%60mlflow.prompt.is_prompt%60+%3D+%27true%27+AND+tags.%60mlflow.prompt.run_ids%60+ILIKE+%22%25e60ca46bc8f24ccd8cc4bed15507ac4d%25%22 HTTP/1.1" 200 OK
+2026/11/12 18:49:00 INFO:     127.0.0.1:56165 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/11/12 18:49:00 INFO:     127.0.0.1:56164 - "POST /ajax-api/2.0/mlflow/logged-models/search HTTP/1.1" 200 OK
+2026/11/12 18:49:05 INFO:     127.0.0.1:56163 - "GET /ajax-api/2.0/mlflow/metrics/get-history-bulk-interval?run_ids=e60ca46bc8f24ccd8cc4bed15507ac4d&metric_key=val_accuracy&max_results=320 HTTP/1.1" 200 OK
+2026/11/12 18:49:05 INFO:     127.0.0.1:56165 - "GET /ajax-api/2.0/mlflow/metrics/get-history-bulk-interval?run_ids=e60ca46bc8f24ccd8cc4bed15507ac4d&metric_key=train_loss&max_results=320 HTTP/1.1" 200 OK
+2026/11/12 18:49:05 INFO:     127.0.0.1:56164 - "GET /ajax-api/2.0/mlflow/metrics/get-history-bulk-interval?run_ids=e60ca46bc8f24ccd8cc4bed15507ac4d&metric_key=val_loss&max_results=320 HTTP/1.1" 200 OK
+2026/11/12 18:49:07 INFO:     127.0.0.1:56164 - "POST /ajax-api/3.0/mlflow/traces/search HTTP/1.1" 200 OK
+2026/11/12 18:49:07 INFO:     127.0.0.1:56165 - "POST /ajax-api/3.0/mlflow/traces/search HTTP/1.1" 200 OK
+2026/11/12 18:49:07 INFO:     127.0.0.1:56163 - "GET /ajax-api/3.0/mlflow/scorers/list?experiment_id=2 HTTP/1.1" 200 OK
+2026/11/12 18:49:07 INFO:     127.0.0.1:56170 - "POST /ajax-api/3.0/mlflow/traces/metrics HTTP/1.1" 200 OK
+2026/11/12 18:49:07 INFO:     127.0.0.1:56171 - "POST /ajax-api/3.0/mlflow/traces/metrics HTTP/1.1" 200 OK
+2026/11/12 18:49:07 INFO:     127.0.0.1:56170 - "POST /ajax-api/3.0/mlflow/datasets/search HTTP/1.1" 200 OK
+2026/11/12 18:49:07 INFO:     127.0.0.1:56165 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/11/12 18:49:08 INFO:     127.0.0.1:56163 - "GET /ajax-api/2.0/mlflow/artifacts/list?run_uuid=e60ca46bc8f24ccd8cc4bed15507ac4d HTTP/1.1" 200 OK
+2026/11/12 18:49:09 INFO:     127.0.0.1:56163 - "GET /ajax-api/2.0/mlflow/artifacts/list?run_uuid=e60ca46bc8f24ccd8cc4bed15507ac4d&path=checkpoints HTTP/1.1" 200 OK
+2026/11/12 18:49:10 INFO:     127.0.0.1:56163 - "GET /ajax-api/2.0/mlflow-artifacts/artifacts/2/e60ca46bc8f24ccd8cc4bed15507ac4d/artifacts/checkpoints/latest_checkpoint_metrics.json HTTP/1.1" 200 OK
+2026/11/12 18:49:11 INFO:     127.0.0.1:56163 - "GET /ajax-api/2.0/mlflow-artifacts/artifacts/2/e60ca46bc8f24ccd8cc4bed15507ac4d/artifacts/model_summary.txt HTTP/1.1" 200 OK
+2026/11/12 18:49:13 INFO:     127.0.0.1:56172 - "GET /ajax-api/2.0/mlflow/model-versions/search?filter=tags.%60mlflow.prompt.is_prompt%60+%3D+%27true%27+AND+tags.%60mlflow.prompt.run_ids%60+ILIKE+%22%25e60ca46bc8f24ccd8cc4bed15507ac4d%25%22 HTTP/1.1" 200 OK
+2026/11/12 18:49:13 INFO:     127.0.0.1:56163 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/11/12 18:49:20 INFO:     127.0.0.1:56173 - "GET /ajax-api/2.0/mlflow/metrics/get-history-bulk-interval?run_ids=e60ca46bc8f24ccd8cc4bed15507ac4d&metric_key=train_loss&max_results=320&start_step=5&end_step=22 HTTP/1.1" 200 OK
+2026/11/12 18:49:45 INFO:     127.0.0.1:56202 - "GET /ajax-api/2.0/mlflow/metrics/get-history-bulk-interval?run_ids=e60ca46bc8f24ccd8cc4bed15507ac4d&metric_key=val_accuracy&max_results=320 HTTP/1.1" 200 OK
+2026/11/12 18:49:45 INFO:     127.0.0.1:56202 - "GET /ajax-api/2.0/mlflow/metrics/get-history-bulk-interval?run_ids=e60ca46bc8f24ccd8cc4bed15507ac4d&metric_key=val_loss&max_results=320 HTTP/1.1" 200 OK
+2026/11/12 18:49:58 INFO:     127.0.0.1:56203 - "GET /ajax-api/2.0/mlflow/metrics/get-history-bulk-interval?run_ids=e60ca46bc8f24ccd8cc4bed15507ac4d&metric_key=train_loss&max_results=320 HTTP/1.1" 200 OK
+2026/11/12 18:50:15 INFO:     127.0.0.1:56206 - "GET /ajax-api/2.0/mlflow/metrics/get-history-bulk-interval?run_ids=e60ca46bc8f24ccd8cc4bed15507ac4d&metric_key=val_accuracy&max_results=320 HTTP/1.1" 200 OK
+2026/11/12 18:50:16 INFO:     127.0.0.1:56206 - "GET /ajax-api/2.0/mlflow/metrics/get-history-bulk-interval?run_ids=e60ca46bc8f24ccd8cc4bed15507ac4d&metric_key=val_loss&max_results=320 HTTP/1.1" 200 OK
+2026/11/12 18:50:26 INFO:     Shutting down
+2026/11/12 18:50:26 INFO:     Shutting down
+2026/11/12 18:50:26 INFO:     Shutting down
+2026/11/12 18:50:26 INFO:     Shutting down
+2026/11/12 18:50:26 INFO:     Waiting for application shutdown.
+2026/11/12 18:50:26 INFO:     Waiting for application shutdown.
+2026/11/12 18:50:26 INFO:     Waiting for application shutdown.
+2026/11/12 18:50:26 INFO:     Application shutdown complete.
+2026/11/12 18:50:26 INFO:     Application shutdown complete.
+2026/11/12 18:50:26 INFO:     Finished server process [12484]
+2026/11/12 18:50:26 INFO:     Finished server process [12486]
+2026/11/12 18:50:27 INFO:     Application shutdown complete.
+2026/11/12 18:50:27 INFO:     Finished server process [12485]
+2026/11/12 18:50:27 INFO:     Waiting for application shutdown.
+2026/11/12 18:50:27 INFO:     Application shutdown complete.
+2026/11/12 18:50:27 INFO:     Finished server process [12483]
+2026/11/12 18:50:27 INFO:     Received SIGTERM, exiting.
+2026/11/12 18:50:27 INFO:     Received SIGTERM, exiting.
+2026/11/12 18:50:27 INFO:     Received SIGTERM, exiting.
+2026/11/12 18:50:27 INFO:     Waiting for child process [12483]
+2026/11/12 18:50:27 INFO:     Waiting for child process [12484]
+2026/11/12 18:50:27 INFO:     Waiting for child process [12485]
+2026/11/12 18:50:27 INFO:     Waiting for child process [12486]
+2026/11/12 18:50:27 INFO:     Stopping parent process [12480]
