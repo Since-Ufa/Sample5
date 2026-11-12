@@ -1,11 +1,11 @@
-"""
-Распознавание рукописных цифр (0–9) по маленьким чёрно-белым картинкам 8x8 пикселей.
-Датасет встроен в scikit-learn, интернет не нужен.
-"""
+import mlflow
 import torch
 import torch.nn as nn
 from sklearn.datasets import load_digits
 from sklearn.model_selection import train_test_split
+
+mlflow.set_tracking_uri("http://127.0.0.1:5000")  # куда отправлять логи (запущенный `mlflow ui`)
+mlflow.set_experiment("digits")  # эксперимент = папка для запусков; создастся сам
 
 
 def load_data():
@@ -34,19 +34,25 @@ def train(lr, epochs, hidden):
     opt = torch.optim.Adam(model.parameters(), lr=lr)
     loss_fn = nn.CrossEntropyLoss()
 
-    for epoch in range(epochs):
-        opt.zero_grad()
-        loss = loss_fn(model(X_train), y_train)  # насколько модель ошибается
-        loss.backward()
-        opt.step()  # модель чуть-чуть исправляется
-        print(f"epoch {epoch}: loss={loss.item():.4f}")
+    with mlflow.start_run(run_name=f"lr={lr}, hidden={hidden}"):  # один run = один запуск обучения
+        # параметры: настройки, записываем один раз
+        mlflow.log_params({"lr": lr, "epochs": epochs, "hidden": hidden})
 
-    acc = accuracy(model, X_test, y_test)
-    print("test accuracy:", acc)
-    torch.save(model, f"model_lr{lr}_h{hidden}.pt")
-    return acc
+        for epoch in range(epochs):
+            opt.zero_grad()
+            loss = loss_fn(model(X_train), y_train)  # насколько модель ошибается
+            loss.backward()
+            opt.step()  # модель чуть-чуть исправляется
+            # метрика по эпохам: step=epoch -> MLflow нарисует график
+            mlflow.log_metric("train_loss", loss.item(), step=epoch)
 
-if __name__=="__main__":
+        # итоговая метрика
+        acc = accuracy(model, X_test, y_test)
+        mlflow.log_metric("test_accuracy", acc)
+        print(f"lr={lr}, hidden={hidden}: test accuracy = {acc:.3f}")
+
+
+if __name__ == "__main__":
     train(lr=0.01, epochs=30, hidden=32)
     train(lr=0.1, epochs=30, hidden=64)
-    train(lr=0.001, epochs=45, hidden=32)
+    train(lr=0.001, epochs=100, hidden=32)
